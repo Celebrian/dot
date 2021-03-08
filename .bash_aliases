@@ -36,7 +36,7 @@ alias yams='find . -type f -name "*.yml*" -exec yamllint -f parsable {} \; | sed
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
-alias cm='git commit -m'
+alias cm='git commit -S -m'
 alias glog='git log --oneline --graph --color --all --decorate'
 
 # "Putty"
