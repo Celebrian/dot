@@ -38,7 +38,7 @@ alias ga='git add'
 alias gp='git push'
 alias cm='git commit -S -m'
 alias glog='git log --oneline --graph --color --all --decorate'
-alias gitpullsubfolders='for i in */.git; do cd $(dirname); git pull; cd ..; done'
+alias gitpullsubfolders='for i in */.git; do cd $(dirname $i); git pull; cd ..; done'
 
 # "Putty"
 alias putty='sudo screen /dev/ttyUSB0 9600'
