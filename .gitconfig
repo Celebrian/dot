@@ -2,14 +2,14 @@
 # Name, username, email and GPG key to sign commits
 [user]
         name = Celebrian
-	username = celebrian
-	email = per_kb@hotmail.com
+        username = celebrian
+        email = per_kb@hotmail.com
         signingkey = C835C26E7D8CB3FEBA586AB7545D96DB2BBA85F5
 
 # Main editor vim
 # Convert CRLF to LF on commit, in case it's from a windows machine
 [core]
-	editor = vim
+        editor = vim
         autocrlf = input
 
 # Actually do the suggested command after misstyping it, after a 3 second grace period
@@ -18,8 +18,19 @@
 
 # Use GPG signing on commits
 [commit]
-	gpgsign = true
+        gpgsign = true
 
 # Push simple, in case there is an old git version
 [push]
-	default = simple
+        default = simple
+
+# Some git aliases for easier navigation
+[alias]
+        cached = diff --cached
+        cm = commit -S -m
+        get = pull --ff-only
+        l = log --oneline --graph --color --all --decorate
+        last = log -1 HEAD --stat
+        rv = remote -v
+        st = status -sb
+        unstage = git reset HEAD --
