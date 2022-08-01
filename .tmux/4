@@ -1,0 +1,4 @@
+neww
+split-window -p 66
+split-window -d
+split-window -h
