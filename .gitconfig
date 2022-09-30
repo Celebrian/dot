@@ -34,3 +34,5 @@
         rv = remote -v
         st = status -sb
         unstage = git reset HEAD --
+[init]
+        defaultBranch = main

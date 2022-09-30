@@ -24,3 +24,7 @@ done
 if [[ -L ~/.vimrc && ! -L ~/.vim ]]; then
     ln -s $PWD/.vim ~/.vim
 fi
+#If tmux.conf is a symlink and we do not have .tmux folder, we also want tmux folder with panes macroes
+if [[ -L ~/.tmux.conf && ! -L ~/.tmux ]]; then
+    ln -s $PWD/.tmux ~/.tmux
+fi
