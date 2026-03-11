@@ -52,3 +52,13 @@ alias nethack='ssh nethack@nethack.alt.org'
 
 # Other shortcuts
 alias ssll='ssh-add -L'
+
+# Check what auditd key rules have been hit today
+alias aukeyreport='aureport -ts today -i -k --summary'
+
+# REscan for resized disks
+alias rescandisk='for i in $(ls /sys/class/scsi_device/); do echo 1 > /sys/class/scsi_device/${i}/device/rescan; done'
+
+# Default short dig and reverse dig
+alias dig='dig +short +search '
+alias reversedig='dig +short -x '
